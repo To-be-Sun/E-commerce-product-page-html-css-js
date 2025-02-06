@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | E-commerce Product Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <nav>
+        <div class="hamburger-menu">&#9776;</div>
+        <div class="logo">Sneakers</div>
+        <ul class="top-selector">
+          <li>Collections</li>
+          <li>Men</li>
+          <li>Women</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+      <div class="top-images">
+        <img src="images/icon-cart.svg" alt="">
+        <img class="avator" src="images/image-avatar.png" alt="">
+      </div>
+      
+    </header>
+  
+    <div class="container">
+      <!-- 商品画像エリア -->
+      <div class="image-gallery">
+        <img src="images/image-product-1.jpg" alt="Sneaker" class="main-image">
+        <div class="thumbnail-container">
+          <img src="images/image-product-1.jpg" class="thumbnail active">
+          <img src="images/image-product-2.jpg" class="thumbnail">
+          <img src="images/image-product-3.jpg" class="thumbnail">
+          <img src="images/image-product-4.jpg" class="thumbnail">
+        </div>
+      </div>
+      <div class="image-gallery-two">
+        <img class="prev-btn-two" src="images/icon-previous.svg" alt="">
+        <img src="images/image-product-1.jpg" alt="Sneaker" class="main-image-three">
+        <img class="next-btn-two" src="images/icon-next.svg" alt="">
+      </div>
+      
+    
+      
+      <!-- 商品情報エリア -->
+      <div class="product-info">
+        <h2 class="product-title">Sneaker Company</h2>
+        <h1 class="product-name">Fall Limited Edition Sneakers</h1>
+        <p class="product-description">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+  
+        <div class="price-container">
+          <span class="price">$125.00</span>
+          <span class="discount">50%</span>
+          <span class="original-price">$250.00</span>
+        </div>
+  
+        <div class="quantity-container">
+          <div class="count">
+            <img src="images/icon-minus.svg" id="decrease">
+            <span class="quantity">0</span>
+            <img  src="images/icon-plus.svg" id="increase">
+          </div>
+          <button class="cart-button">Add to cart</button>
+        </div>
+        
+      </div>
+    </div>
+  </main>
+  
+
+  <!-- モーダル (拡大画像表示) -->
+  <div class="modal-container">
+    <div class="modal">
+        <div class="modal-close">&times;</div>
+        <img class="prev-btn" src="images/icon-previous.svg" alt="">
+        <img src="images/image-product-1.jpg" alt="Sneaker" class="main-image-two">
+        <img class="next-btn" src="images/icon-next.svg" alt="">
+        <div class="thumbnail-container">
+            <img src="images/image-product-1.jpg" class="thumbnail-two active">
+            <img src="images/image-product-2.jpg" class="thumbnail-two">
+            <img src="images/image-product-3.jpg" class="thumbnail-two">
+            <img src="images/image-product-4.jpg" class="thumbnail-two">
+        </div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
+
