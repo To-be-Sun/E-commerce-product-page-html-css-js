@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const nextBtn = document.querySelector(".next-btn");
     const prevBtnTwo = document.querySelector(".prev-btn-two");
     const nextBtnTwo = document.querySelector(".next-btn-two");
+    const hamburger = document.querySelector(".hamburger-menu");
+    const closeBtn = document.querySelector(".menu-close");
 
     let currentIndex = 0;
     const imageSources = Array.from(thumbnails).map(img => img.src);
@@ -91,6 +93,16 @@ document.addEventListener("DOMContentLoaded", () => {
             if (e.key === "Escape") modalClose.click();
         }
     });
+
+    hamburger.addEventListener("click", ()=>{
+        hamburger.style.opacity = "0";
+        document.querySelector(".hidden-menu-container").classList.add("active");
+    });
+    closeBtn.addEventListener("click", ()=>{
+        hamburger.style.opacity = "1";
+        document.querySelector(".hidden-menu-container").classList.remove("active");
+    });
+
 });
 document.addEventListener("DOMContentLoaded", () => {
     const quantityDisplay = document.querySelector(".quantity");
@@ -123,4 +135,5 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
 

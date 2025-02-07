@@ -293,6 +293,35 @@ li{
     padding :10px;
     border-radius:50%;
 }
+.hidden-menu-container{
+    display:none;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* ビューポート幅を100% */
+    height: 100vh;
+    background:rgba(0, 0, 0, 0.783);
+}
+.menu-close{
+    position:fixed;
+    top:10px;
+    left:10px;
+    font-size:40px;
+    color:white;
+}
+.hidden-menu{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-65%, -50%);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+.hidden-menu li{
+  border-bottom:1px solid white;
+}
 
 
   
@@ -359,5 +388,8 @@ li{
 
     .hamburger-menu {
         display: block;
+    }
+    .hidden-menu-container.active{
+      display:block;
     }
 }
